@@ -1,0 +1,177 @@
+#strings {
+    padding: 10px 0 10px 0;
+    background-color: $primaryColor;
+
+    .anime-div {
+        width: 3vw;
+        height: 5px;
+        margin: auto;
+        background-color: red;
+        animation: lineanime 4s infinite;
+        margin-bottom: 10px;
+    }
+
+    @keyframes lineanime {
+        0% {
+            width: 3vw;
+            filter: hue-rotate(0deg);
+        }
+
+        25% {
+            width: 50vw;
+        }
+
+        50% {
+            width: 3vw;
+            filter: hue-rotate(180deg);
+        }
+
+        75% {
+            width: 100vw;
+        }
+
+        100% {
+            width: 3vw;
+            filter: hue-rotate(360deg);
+        }
+    }
+
+    .continer {
+        margin: auto;
+        max-width: 1440px;
+
+        .string-metods {
+            display: block;
+            @include flex($gap: 10px);
+
+            .textall {
+                width: 50%;
+                display: inline-block;
+                resize: none;
+                border: none;
+                outline: none;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            .btn-container {
+                display: inline-block;
+                width: 50%;
+                border-radius: 10px;
+                
+
+                @include flex($f-direction: column, $gap: 10px);
+
+                button,
+                input {
+                    border: none;
+                    outline: none;
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+
+            }
+        }
+
+        .outtext {
+            line-height: 53px;
+            padding: 10px;
+        }
+
+    }
+
+
+}
+
+
+#arrays {
+    padding: 10px 0 10px 0;
+    background-color: $primaryColor;
+
+    .anime-div {
+        width: 3vw;
+        height: 5px;
+        margin: auto;
+        background-color: red;
+        animation: lineanime 4s infinite;
+        margin-bottom: 10px;
+    }
+
+    @keyframes lineanime {
+        0% {
+            width: 3vw;
+            filter: hue-rotate(0deg);
+        }
+
+        25% {
+            width: 50vw;
+        }
+
+        50% {
+            width: 3vw;
+            filter: hue-rotate(180deg);
+        }
+
+        75% {
+            width: 100vw;
+        }
+
+        100% {
+            width: 3vw;
+            filter: hue-rotate(360deg);
+        }
+    }
+
+    .array-form{
+        max-width: 1440px;
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+
+        .input-array{
+            width: 100%;
+            resize: none;
+            padding: 10px;
+        }
+
+        .splice-array{
+            @include flex;
+        }
+
+        .button{
+            width: calc(100% - 40px);
+        }
+
+  /*       .push-container,
+        .unshift-container{
+            width: calc(100% - 40px);
+
+        } */
+
+        button,
+        input {
+            width: calc(50% - 33px);
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .output-array{
+            width: 100%;
+            resize: none;
+            padding: 10px; 
+
+        }
+
+
+        
+    }
+
+
+
+
+
+
+
+}
